@@ -1,0 +1,16 @@
+    <header class="navbar navbar-fixed-top navbar-dark">
+      <div class="container">
+        <%= link_to image_tag("logo.png", alt: "Logo",id: "logo",:size =>'160x40'),root_path %>
+        <nav>
+          <ul class="nav navbar-nav navbar-left">
+            <li><%= link_to "Expenseとは?", about_path %></li>
+            <li><%= link_to "Help",   help_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "サインイン",   '#' %></li>
+            <li><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></li>
+          </ul>          
+        </nav>
+      </div>
+    </header>
