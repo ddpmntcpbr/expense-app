@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
+class OfficesControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get invite_path
+    get signup_path
     assert_response :success
   end
 
