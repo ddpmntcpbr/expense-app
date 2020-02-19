@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20200217112642) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_offices_on_email", unique: true
   end
 
   create_table "users", force: :cascade do |t|
